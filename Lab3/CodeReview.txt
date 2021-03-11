@@ -12,3 +12,4 @@ Stage 1. Naming conventions
 - remove hardcoded values (aka magic numbers)
 
 - validate input values
+- replace the if-then-else checks with switch
