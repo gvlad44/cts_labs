@@ -1,0 +1,14 @@
+Code Review
+
+Stage 1. Naming conventions
+
+- rename Clasa1 to something more meaningful
+- rename Calculeaza - use small caps
+- rename function args 
+- rename rezultat
+- rename valoare
+- format code
+
+- remove hardcoded values (aka magic numbers)
+
+- validate input values

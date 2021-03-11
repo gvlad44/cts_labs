@@ -31,7 +31,8 @@ public class SavingsAccount extends BankAccount implements Profitable{
 	@Override
 	public void transfer(Account destination, Double amount) throws InsufficientFundsException, IllegalTransferException {
 		if(this == destination) {
-			throw new IllegalTransferException();		}
+			throw new IllegalTransferException();		
+		}
 		this.withdraw(amount);
 		destination.deposit(amount);
 	}
@@ -39,7 +40,6 @@ public class SavingsAccount extends BankAccount implements Profitable{
 	@Override
 	public void addInterest(double interestPercentRate) {
 		this.balance *= (1+ interestPercentRate/100);
-		
 	}
 
 	
