@@ -1,7 +1,7 @@
-package ro.ase.csie.cts.g1093.laboratory3.stage2;
+package ro.ase.csie.cts.gr1093.lab3.stage2;
 
-import ro.ase.csie.cts.g1093.laboratory3.exceptions.InvalidAccountAgeException;
-import ro.ase.csie.cts.g1093.laboratory3.exceptions.InvalidPriceException;
+import ro.ase.csie.cts.gr1093.lab3.exceptions.InvalidAccountAgeException;
+import ro.ase.csie.cts.gr1093.lab3.exceptions.InvalidPriceException;
 
 public class Product {
 	
