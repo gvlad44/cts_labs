@@ -9,7 +9,7 @@ public class RESTBackend {
 	
 	private static RESTBackend theBackend = null;
 	
-	//lazy instantiation example
+	
 	private RESTBackend(String url, String data) {
 		System.out.println("Openning a connection"
 				+ " to the backend");
@@ -25,6 +25,7 @@ public class RESTBackend {
 		System.out.println("Send GET command to " + this.url);
 	}
 	
+	//lazy instantiation example
 	public static synchronized RESTBackend getRESTBackend() {
 		if(theBackend == null) {
 			String url = "www.acs.ase.ro/game";
