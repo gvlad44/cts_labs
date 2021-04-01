@@ -4,12 +4,22 @@ Stage 1. Naming conventions
 
 - rename Clasa1 to something more meaningful
 - rename Calculeaza - use small caps
-- rename function args 
-- rename rezultat
-- rename valoare
-- format code
+- rename the function arguments
+- rename 'rezultat'
+- rename 'valoare'
+- format your code
 
-- remove hardcoded values (aka magic numbers)
+- remove the hard-coded values aka "magic numbers"
 
-- validate input values
-- replace the if-then-else checks with switch
+- validate your input values
+- replace the if-then-else checks for the productType with switch
+
+Stage 2. KISS, Single Responsibility -> reduce functions complexity
+- remove the switch by using a generic approach for each product type
+- out-source the validations
+- out-source the way the fidelity discount is computed
+
+Stage 3. Dependency Inversion Principle (DIP)
+- remove the dependency regarding the validation of input values
+- remove the dependency on the static values - they are given by the Marketing team
+- remove the dependency on the way the fidelity is computed - Marketing will decide
