@@ -1,0 +1,58 @@
+Code refactoring
+
+Category:
+
+Meaningful names
+- add a suggestive package name and rename the package from the received class
+- rename class name to be more suggestive -> LoanAccount
+- rename class variable loan_value to -> loanValue
+- rename to_string() function using naming conventions -> toString()
+- rename loan() function to be more suggestive -> getLoanValue()
+- rename setValue() function to be more suggestive -> setLoanValue()
+- rename setLoanValue() parameter's to be more suggestive -> loanValue
+- rename constructor parameter to be more suggestive value -> loanValue
+- rename function calculate() to be more suggestive -> computeBrokerTotalFee()
+- rename variable account_Type to -> loanAccountType
+- rename constructor parameter account_Type to -> loanAccountType
+- rename function print() to -> printStatement()
+- rename variable totalFee to -> brokerTotalFee
+
+Format code
+- format code using Ctrl + Shift + F
+- added brackets for if statements with a single instruction
+- moved both constructors to the top of the class for better clarity
+
+Functions
+- add this to the return line of setLoanValue()
+- add this to the return line of getLoanValue()
+- add this to this.loanValue in public constructor
+- created computeInterestPrincipal() function so that computeBrokerTotalFee() respects
+ Single Responsibility principle 
+- getRate() does 2 things so split it into 2 functions
+- getLoanValue() does 2 things so split it into 2 functions
+- created constructor with ValidationInterface as a parameter
+
+Methods
+- validate constructor parameter rate
+- validate computeBrokerTotalFee() parameters
+- deleted unused variable vb from function print();
+- remove variable temp and make it a final variable -> NO_DAYS_IN_YEAR
+- remove hard-coded value 365 from computeBrokerTotalFee
+- remove hard-coded value 0.125 and made a final variable -> BROKER_FEE
+- generated getter and setter for daysActive
+
+Exceptions
+- added throws declaration to computeBrokerTotalFee()
+- created 3 custom exceptions and implemented them instead of the standard exception
+- remove the dependency regarding the validations for the input
+
+Comments
+- removed comment from getMonthlyRate()
+- removed comment from computeBrokerTotalFee()
+- removed comment regarding interest-principal from computeBrokerTotalFee()
+
+Enums and Annotations
+- made account_Type from int to enum -> loanAccountType
+
+
+
