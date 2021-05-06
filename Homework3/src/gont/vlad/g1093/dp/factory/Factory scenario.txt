@@ -1,0 +1,16 @@
+Web application for pick-up basketball
+
+Problem description
+	In order to improve the experience each user has with the application, I came up with a page through
+which users can share their feedback with the developers. At the moment there are a few types of messages
+users can send, such as: standard, bug, feedback and other. Each category has different attributes and 
+there is a slight chance that in the future they will change or other types will be added.
+
+Advantages
+- all created messages have a common interface
+- can add other types of messages easily, there is no need to modify most of the existing code
+- implements DIP
+
+Disadvantages
+- the user is limited to a single interface for all the objects
+- increases the complexity of the application

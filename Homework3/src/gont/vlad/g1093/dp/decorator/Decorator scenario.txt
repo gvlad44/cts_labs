@@ -1,0 +1,14 @@
+Web application for pick-up basketball
+
+Problem description
+	In the user interface, on the homepage, there is a table which displays the user the matches they
+signed up for. Now, for the creator of the match there must be added 3 more buttons at run time, one for displaying
+match details, one for checking in of the attending users and one for deleting the match.
+
+Advantages
+- The table class is modified at run time and is not modified for normal users
+- If needed other decorators can be added
+
+Disadvantages
+- The code complexity increases, since a few classes are added
+- When calling the decorators we can break clean code when naming variables of the same type

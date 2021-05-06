@@ -1,0 +1,14 @@
+Web application for pick-up basketball
+
+Problem description
+	When initially developing the web application the developer implemented a standard authentication,
+which required a register. Now, the application has added Google authentication, which is an external
+resource, and the sign up for the new log in system must be compatible with the old one, so that the
+database doesn't need a reset.
+	
+Advantages
+- existent class which was user before will not be modified
+- only a middle ground is added between the two classes
+
+Disadvantages
+- the pattern implements multiple derivation which is not available in Java 

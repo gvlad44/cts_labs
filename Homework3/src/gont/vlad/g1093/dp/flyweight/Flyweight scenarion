@@ -1,0 +1,16 @@
+Web application for pick-up basketball
+
+Problem description
+	The public matches interface has a lot of games available, each one having a visual interface, that 
+contain the same components for the data and are of the same shape. Each card has an animation which is of
+different colour and speed. The animation requires a significant space and an efficient way of dealing 
+with them is needed from a memory point of view.
+
+Advantages
+- working with immutable classes
+- reducing memory usage by sharing the same state
+
+Disadvantages
+- hard to implement
+- not worth to implement when working with a small number of objects, each having small dimensions in the 
+memory

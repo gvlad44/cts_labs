@@ -1,0 +1,16 @@
+Web application for pick-up basketball
+
+Problem description
+	Whenever the developer resets the database, the application must generate a few matches that will 
+appear in the "Public matches" page. Each card has a few details and an animation that appears on it. 
+These cards will have the same animation. The process of rendering the animation is expensive because
+it needs a lot of resources for the loading time and displaying the animation.
+
+Advantages
+- create clones of an object rather quick and efficient
+- avoids calling the constructor directly
+
+Disadvantages
+- shallow copy can appear if the pattern is not implemented properly
+- if the application has a few objects, the use of this pattern is not necessary
+- each subclass will implement clone(), which can be a hard thing to do properly on manage well

@@ -1,0 +1,10 @@
+Web application for pick-up basketball
+
+Problem description
+	There exists an admin interface on a certain, secured route that should be accessible to administrators
+only. The page contains sensitive information. The aim is to implement a proxy that reroutes the user to
+the login page of the application if he is not an admin and tries to access the page more than 2 times.
+
+Advantages
+
+Disadvantages

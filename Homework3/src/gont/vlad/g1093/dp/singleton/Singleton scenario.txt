@@ -1,0 +1,20 @@
+Web application for pick-up basketball
+
+Problem description
+	In order to have a modern solution the application will use the Google Authentication API, which is an
+external resource. Because it is a complex operation, you wish to have an efficient way of accessing it and
+have it in a unique instance, which is globally accessible. People who want to work at the solution can't
+build multiple instances of a connection to the API. The users can use a single object to access the API.
+
+
+
+Advantages
+- This pattern is easy to implement
+- Provides a single access point to the Google Authentication API
+- Easier to manage resources, due to having a single instance
+
+Disadvantages
+- Makes the authentication a single point of failure for the application
+- It doesn't respect the Single Responsibility Principle from S.O.L.I.D, the respective class 
+clearly has 2 responsibilities at the very least
+- Increases the application's complexity 

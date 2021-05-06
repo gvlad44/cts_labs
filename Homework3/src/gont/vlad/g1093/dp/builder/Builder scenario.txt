@@ -1,0 +1,19 @@
+Web application for pick-up basketball
+
+Problem description
+	Each user must create an account when first accessing the application. The user must send only a few 
+fields such as name and email to the database. There are other fields that should be completed but are not
+mandatory, the fields relating to other personal details and contact means. I am looking for an efficient
+way to create the User objects, while at the same time not giving values for all the existing fields in
+the database. The rest of the fields are: isAdmin, age, facebook and game, an interface that allows the 
+user to create a game or participate to a match.
+
+Advantages
+- the creation and initialization of an user object is more flexible
+- the complex user instance is created independently of the fields that are part of it
+
+Disadvantages
+- increases the complexity of the code because this design pattern forces the programmer to add some other
+classes in the solution
+- this pattern doesn't account for human error, that being missing a few attributes when initializing the
+user, even if you meant to do it
