@@ -8,7 +8,7 @@ public class Superhero {
 	String name;
 	int lifePoints;
 
-	MoveStateInterface moveState = null;
+	MoveStateInterface moveState = new NormalState();
 
 	public Superhero(String name, int lifePoints) {
 		super();
