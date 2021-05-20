@@ -18,7 +18,7 @@ public class TestFacade {
 
 		// using the facade
 		String profile2 = UserAPIFacade.getUserProfile("user2", "123456");
-
+		System.out.println(profile2);
 	}
 
 }
