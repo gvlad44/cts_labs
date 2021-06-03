@@ -60,6 +60,16 @@ public class Student {
 	public int getNoGrades() {
 		return this.grades.size();
 	}
+	
+	public int getMinGrade() {
+		int min = this.grades.get(0);
+		for(int grade: grades) {
+			if(min > grade) {
+				min = grade;
+			}
+		}
+		return min;
+	}
 
 	public float getGradesAverage() {
 		

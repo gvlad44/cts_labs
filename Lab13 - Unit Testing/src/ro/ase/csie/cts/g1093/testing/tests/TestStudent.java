@@ -10,8 +10,10 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
-
+import ro.ase.csie.cts.g1093.testing.category.ImportantTest;
+import ro.ase.csie.cts.g1093.testing.category.PerformanceTest;
 import ro.ase.csie.cts.g1093.testing.exception.WringGradeException;
 import ro.ase.csie.cts.g1093.testing.exception.WrongAgeException;
 import ro.ase.csie.cts.g1093.testing.exception.WrongNameException;
@@ -93,6 +95,7 @@ public class TestStudent {
 		student.setName(newName);
 	}
 	
+	@Category(ImportantTest.class)
 	@Test
 	public void testGetGradesAverage() throws WringGradeException {
 		ArrayList<Integer> grades = new ArrayList<>();
@@ -125,6 +128,7 @@ public class TestStudent {
 		
 	}
 	
+	@Category({ImportantTest.class , PerformanceTest.class})
 	@Test
 	public void testGetGradesCardinalityOne() throws WringGradeException {
 		ArrayList<Integer> grades = new ArrayList<>();
