@@ -8,8 +8,6 @@ public class Player {
 	
 	BonusStrategyInterface bonusCampaign = null;
 	
-	
-	
 	public void setBonusCampaign(BonusStrategyInterface bonusCampaign) {
 		this.bonusCampaign = bonusCampaign;
 	}

@@ -19,6 +19,7 @@ import ro.ase.csie.cts.g1093.testing.models.Student;
 
 public class TestStudent {
 
+	//test fixture
 	static Student student;
 	static ArrayList<Integer> grades;
 	static String initialName = "John";

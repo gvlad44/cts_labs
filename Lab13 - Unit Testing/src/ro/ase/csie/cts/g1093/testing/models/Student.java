@@ -50,7 +50,7 @@ public class Student {
 	}
 
 	public void setGrades(ArrayList<Integer> grades) throws WringGradeException{
-		this.grades = grades;
+		this.grades = (ArrayList<Integer>) grades.clone();
 	}
 
 	public int getGrade(int index) {
